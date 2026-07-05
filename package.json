@@ -1,0 +1,13 @@
+{
+  "name": "event-management",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "client": "npm --prefix Client/Eventora run dev",
+    "server": "npm --prefix Server run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix Client/Eventora run build",
+    "lint": "npm --prefix Client/Eventora run lint"
+  },
+  "devDependencies": {}
+}
